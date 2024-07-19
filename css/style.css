@@ -79,7 +79,7 @@ img:hover{
 
 .table-container{
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
     
 table{
@@ -102,6 +102,19 @@ th{
     padding: 10px;
     background-color: #f2f2f2;
     color: #000000;
+}
+
+.table-container::-webkit-scrollbar:horizontal{
+    height: 10px;
+}
+  
+.table-container::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.table-container::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
 
 table:not(#ood-to-en-zsvc):not(#ood-to-cn-zsvc):not(#x-lingual-ac):not(#ablation-1):not(#ablation-2):not(#youth-sc):not(#british-sc):not(#cartoon-sc):not(#multi-aus-accent):not(#multi-br-accent):not(#age-editing):not(#gender-editing):not(#multi-aus-age):not(#multi-aus-gender):not(#multi-aus-accent-age):not(#multi-aus-accent-gender):not(#multi-aus-age-gender):not(#multi-aus-accent-age-gender):not(#multi-br-age):not(#multi-br-gender):not(#multi-br-accent-age):not(#multi-br-accent-gender):not(#multi-br-age-gender):not(#multi-br-accent-age-gender) td:nth-child(3){
